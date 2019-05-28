@@ -29,7 +29,7 @@
       <label for="birthday">Full date of birth:
       <input type="date" name="birthday" id="birthday">
       </label>
-      <label for="accept" class="no-margin">I accept the term of the agreement
+      <label for="accept">I accept the term of the agreement
       <input type="checkbox" name="accept" id="accept" >
       </label>
     </fieldset>
@@ -39,16 +39,19 @@
         <label for="mail">E-mail:
         <input type="email" name="mail" id="mail" placeholder="email@example.com" data-qa="field-placeholder" >
         </label>
-        <label for="pass" class="no-margin">Password:
+        <label for="pass">Password:
         <input type="password" name="pass" id="pass" required minlength="8">
         </label>
     </fieldset>
 
     <fieldset>
       <legend>An interesting fact about you!</legend>
-      <label for="cats" class="block">Do you love cats?
-        <input type="radio" name="cats" id="cats" value="yes"> Yes
-        <input type="radio" name="cats" id="" value="no"> No
+      <label for="yes">Do you love cats?
+        <label for="yes" class="cats"><input type="radio" name="cats" id="yes" value="yes"> Yes
+        </label>
+        <label for="no" class="cats">
+            <input type="radio" name="cats" id="no" value="no"> No
+        </label>
       </label>
       <label for="color">What is your favorite color?
       <input type="color" name="color" id="color">
@@ -63,7 +66,7 @@
             <option value="lada">Lada</option>
           </select>
       </label>
-      <label for="rate" class="no-margin">How do you rate our work?
+      <label for="rate">How do you rate our work?
       <input type="range" name="rate" id="rate" value="0">
       </label>
     </fieldset>
@@ -73,7 +76,7 @@
       <label for="comments">Comments:
       <textarea name="comments" id="comments" maxlength="100"></textarea>
       </label>
-      <label for="recommend" class="no-margin">Would you recommend us?
+      <label for="recommend">Would you recommend us?
         <select name="recommend" id="recommend">
           <option value="yes">yes</option>
           <option value="no">no</option>
@@ -83,6 +86,8 @@
 
     <input type="submit" value="Submit">
   </form>
+
+
 <script type="text/javascript" src="./main.js"></script>
 
 </body>

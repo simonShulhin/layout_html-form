@@ -10,3 +10,7 @@ fieldset {
 label:last-of-type {
   margin: 0;
 }
+
+.cats {
+  display: inline;
+}
