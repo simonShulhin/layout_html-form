@@ -1,17 +1,17 @@
-label,
-.cat {
-  display: block;
-  margin-bottom: 10px;
-}
-
 fieldset {
   margin-bottom: 20px;
 }
 
-label:last-of-type {
-  margin: 0;
+.block {
+  display: block;
+  margin-bottom: 10px;
+
 }
 
-.cats {
+.no-margin {
+  margin-bottom: 0;
+}
+
+.inline {
   display: inline;
 }
